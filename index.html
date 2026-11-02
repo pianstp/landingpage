@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auspify Technologies — Bring Future Through Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-dot"></span>Auspify
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk →</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Available for new projects
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-text="Bring Future">Bring Future</span>
+        <span class="line accent-line" data-text="Through Tech.">Through Tech.</span>
+      </h1>
+      <p class="hero-desc">
+        Auspify Technologies crafts digital experiences that push boundaries — from AI-driven platforms to pixel-perfect interfaces.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-main">
+          <span>View Our Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Start a Project</a>
+      </div>
+      <div class="hero-numbers">
+        <div class="num-item"><strong>200+</strong><span>Projects</span></div>
+        <div class="num-divider"></div>
+        <div class="num-item"><strong>50+</strong><span>Clients</span></div>
+        <div class="num-divider"></div>
+        <div class="num-item"><strong>99%</strong><span>Satisfaction</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>AI Development</span><span class="sep">✦</span>
+      <span>Cloud Architecture</span><span class="sep">✦</span>
+      <span>Mobile Apps</span><span class="sep">✦</span>
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>Data Analytics</span><span class="sep">✦</span>
+      <span>Cybersecurity</span><span class="sep">✦</span>
+      <span>AI Development</span><span class="sep">✦</span>
+      <span>Cloud Architecture</span><span class="sep">✦</span>
+      <span>Mobile Apps</span><span class="sep">✦</span>
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>Data Analytics</span><span class="sep">✦</span>
+      <span>Cybersecurity</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <p class="label">What We Do</p>
+      <h2>Services built for <br /><em>the next era</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <div class="service-num">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent systems that learn, adapt, and automate your most complex workflows.</p>
+        <a href="#contact" class="card-link">Explore →</a>
+      </div>
+      <div class="service-card featured" data-reveal>
+        <div class="service-num">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="6" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Product Design</h3>
+        <p>From wireframes to polished interfaces — we design products people love to use.</p>
+        <a href="#contact" class="card-link">Explore →</a>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">03</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V20l16-12 16 12v20H8z" stroke="currentColor" stroke-width="2"/><path d="M20 40v-10h8v10" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Cloud Infrastructure</h3>
+        <p>Scalable, secure cloud solutions engineered for performance and reliability.</p>
+        <a href="#contact" class="card-link">Explore →</a>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="14" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 38h12M24 34v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>High-performance web applications built with modern stacks and best practices.</p>
+        <a href="#contact" class="card-link">Explore →</a>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">05</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="14" y="6" width="20" height="36" rx="4" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="36" r="2" fill="currentColor"/></svg>
+        </div>
+        <h3>Mobile Apps</h3>
+        <p>Native and cross-platform apps that deliver seamless experiences on every device.</p>
+        <a href="#contact" class="card-link">Explore →</a>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">06</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 8l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Data & Analytics</h3>
+        <p>Transform raw data into strategic insights that drive smarter decisions.</p>
+        <a href="#contact" class="card-link">Explore →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio -->
+  <section class="work" id="work">
+    <div class="section-header">
+      <p class="label">Selected Work</p>
+      <h2>Projects that <br /><em>define us</em></h2>
+    </div>
+    <div class="work-grid">
+      <div class="work-card large" data-reveal>
+        <div class="work-img" style="background: linear-gradient(135deg,#ff6b35,#f7c59f)">
+          <div class="work-overlay">
+            <span>AI Platform</span>
+            <a href="#contact" class="work-btn">View Case →</a>
+          </div>
+          <div class="work-mockup-ui">
+            <div class="mui-topbar">
+              <div class="mui-dot r"></div><div class="mui-dot y"></div><div class="mui-dot g"></div>
+              <div class="mui-title">NeuralCore Dashboard</div>
+            </div>
+            <div class="mui-body">
+              <div class="mui-sidebar">
+                <div class="mui-sitem active"></div>
+                <div class="mui-sitem"></div>
+                <div class="mui-sitem"></div>
+                <div class="mui-sitem"></div>
+              </div>
+              <div class="mui-content">
+                <div class="mui-stat-row">
+                  <div class="mui-stat-box"><div class="mui-stat-val">98.4%</div><div class="mui-stat-lbl">Accuracy</div></div>
+                  <div class="mui-stat-box"><div class="mui-stat-val">2.1M</div><div class="mui-stat-lbl">Predictions</div></div>
+                  <div class="mui-stat-box"><div class="mui-stat-val">14ms</div><div class="mui-stat-lbl">Latency</div></div>
+                </div>
+                <div class="mui-chart">
+                  <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                    <polyline points="0,50 30,35 60,40 90,20 120,28 150,10 180,18 200,8" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+                    <polyline points="0,50 30,35 60,40 90,20 120,28 150,10 180,18 200,8 200,60 0,60" fill="rgba(255,255,255,0.15)" stroke="none"/>
+                  </svg>
+                </div>
+                <div class="mui-row-bars">
+                  <div class="mui-bar" style="width:85%"></div>
+                  <div class="mui-bar" style="width:62%"></div>
+                  <div class="mui-bar" style="width:74%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>NeuralCore AI Dashboard</h3>
+          <p>Enterprise AI analytics platform with real-time insights</p>
+          <div class="work-tags"><span>AI</span><span>React</span><span>Python</span></div>
+        </div>
+      </div>
+      <div class="work-card" data-reveal>
+        <div class="work-img" style="background: linear-gradient(135deg,#1a1a2e,#16213e)">
+          <div class="work-overlay">
+            <span>Mobile App</span>
+            <a href="#contact" class="work-btn">View Case →</a>
+          </div>
+          <div class="work-phone-ui">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="ps-header">FinTrack</div>
+                <div class="ps-balance">$12,480<span>.50</span></div>
+                <div class="ps-label">Total Balance</div>
+                <div class="ps-chart">
+                  <svg viewBox="0 0 100 40" preserveAspectRatio="none">
+                    <polyline points="0,35 15,25 30,28 45,12 60,18 75,8 90,14 100,6" fill="none" stroke="#ff6b35" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="ps-txn"><span>Netflix</span><span style="color:#ff6b35">-$14</span></div>
+                <div class="ps-txn"><span>Salary</span><span style="color:#22c55e">+$3,200</span></div>
+                <div class="ps-txn"><span>Groceries</span><span style="color:#ff6b35">-$86</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>FinTrack Mobile</h3>
+          <p>Personal finance app with AI-powered budgeting</p>
+          <div class="work-tags"><span>Flutter</span><span>Firebase</span></div>
+        </div>
+      </div>
+      <div class="work-card" data-reveal>
+        <div class="work-img" style="background: linear-gradient(135deg,#0f3460,#533483)">
+          <div class="work-overlay">
+            <span>E-Commerce</span>
+            <a href="#contact" class="work-btn">View Case →</a>
+          </div>
+          <div class="work-mockup-ui">
+            <div class="mui-topbar">
+              <div class="mui-dot r"></div><div class="mui-dot y"></div><div class="mui-dot g"></div>
+              <div class="mui-title">ShopSphere</div>
+            </div>
+            <div class="mui-shop-body">
+              <div class="shop-search"><div class="shop-search-bar">Search products...</div></div>
+              <div class="shop-grid">
+                <div class="shop-item"><div class="shop-img" style="background:rgba(255,255,255,0.15)"></div><div class="shop-name"></div><div class="shop-price">$49.99</div></div>
+                <div class="shop-item"><div class="shop-img" style="background:rgba(255,107,53,0.3)"></div><div class="shop-name"></div><div class="shop-price">$89.00</div></div>
+                <div class="shop-item"><div class="shop-img" style="background:rgba(83,52,131,0.5)"></div><div class="shop-name"></div><div class="shop-price">$34.50</div></div>
+                <div class="shop-item"><div class="shop-img" style="background:rgba(255,255,255,0.1)"></div><div class="shop-name"></div><div class="shop-price">$120.00</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <h3>ShopSphere Platform</h3>
+          <p>Next-gen e-commerce with AR product preview</p>
+          <div class="work-tags"><span>Next.js</span><span>AR</span><span>Node</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="about">
+    <div class="section-header">
+      <p class="label">How We Work</p>
+      <h2>Our process, <br /><em>simplified</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="step" data-reveal>
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Discovery</h3>
+          <p>We deep-dive into your goals, audience, and challenges to build a solid foundation.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" data-reveal>
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Strategy</h3>
+          <p>We craft a tailored roadmap with clear milestones, timelines, and deliverables.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" data-reveal>
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Build</h3>
+          <p>Our engineers and designers bring the vision to life with precision and care.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" data-reveal>
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Launch</h3>
+          <p>We deploy, monitor, and optimize — ensuring a flawless go-live experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="section-header">
+      <p class="label">Client Love</p>
+      <h2>Words from <br /><em>our clients</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p>"Auspify transformed our entire digital infrastructure. The team's expertise in AI and cloud is unmatched."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background:#ff6b35">JM</div>
+          <div><strong>James Mitchell</strong><span>CTO, TechVentures</span></div>
+        </div>
+      </div>
+      <div class="testi-card" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p>"The product they built for us exceeded every expectation. Delivered on time, on budget, and beautifully."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background:#533483">SR</div>
+          <div><strong>Sarah Reynolds</strong><span>Founder, LaunchPad</span></div>
+        </div>
+      </div>
+      <div class="testi-card" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p>"Working with Auspify felt like having a world-class tech team embedded in our company. Truly exceptional."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background:#0f3460">AK</div>
+          <div><strong>Arjun Kapoor</strong><span>CEO, DataFlow Inc.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="cta-inner" data-reveal>
+      <p class="label">Ready to Start?</p>
+      <h2>Let's build something <em>extraordinary</em> together.</h2>
+      <a href="mailto:hello@auspify.com" class="btn-main large">
+        <span>Start a Project</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><span class="logo-dot"></span>Auspify</a>
+        <p>Bring Future Through Tech.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <strong>Company</strong>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+        </div>
+        <div>
+          <strong>Connect</strong>
+          <a href="mailto:hello@auspify.com">Email Us</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Auspify Technologies. All rights reserved.</p>
+      <p>Crafted with ♥ for the future.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
